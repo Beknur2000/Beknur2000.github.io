@@ -1,0 +1,20 @@
+<html>
+  <head>
+
+  </head>
+  <body>
+
+   <input type="text" [(ngModel)]="search" placeholder="search" >
+   <button (click)="searchPhotos()">Search</button>
+
+   <!-- <ul *ngFor="let d of data">
+     <img src="{{d.src.medium}}" alt="" >
+
+   </ul> -->
+  
+   <ul class="gallery" *ngFor="let d of data">
+      <img src="{{d.src.medium}}" alt="" >
+   
+  </ul>
+  </body>
+</html>
